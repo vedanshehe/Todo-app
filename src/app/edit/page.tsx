@@ -93,8 +93,9 @@ export default function EditPage() {
         {deleted && (
           <div className="mt-6 text-center animate-fade-in">
             <span className="text-sm text-gray-700">
-              Deleted "<strong>{deleted.title}</strong>"
-            </span>
+  Deleted &quot;<strong>{deleted.title}</strong>&quot;
+</span>
+
             <button
               onClick={handleUndo}
               className="ml-3 text-emerald-700 font-semibold underline hover:text-emerald-800 transition"
