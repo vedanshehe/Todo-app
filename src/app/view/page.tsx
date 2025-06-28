@@ -14,7 +14,8 @@ export default function ViewPage() {
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem('todos') || '[]');
 
-    const safeTodos = stored.map((todo: any) => ({
+   const safeTodos = stored.map((todo: Partial<Todo>) => ({
+
       ...todo,
       completed: todo.completed ?? false,
     }));
